@@ -1,0 +1,15 @@
+import json
+import requests
+
+url = "https://kjrw6k4fgg.coze.site/run"
+headers = {
+    "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjMxMWQwNzVjLTY2NDktNDdmYi04MWUxLTJmZDIyYTJmMTgxOSJ9.eyJpc3MiOiJodHRwczovL2FwaS5jb3plLmNuIiwiYXVkIjpbIjh6OE45UUpnR3hXRVByaFZ3NmkycUhXbnhiUFZVV0g5Il0sImV4cCI6ODIxMDI2Njg3Njc5OSwiaWF0IjoxNzc2ODM0MDM4LCJzdWIiOiJzcGlmZmU6Ly9hcGkuY296ZS5jbi93b3JrbG9hZF9pZGVudGl0eS9pZDo3NjMxMTQ1MjA1ODQ4MDgwMzg0Iiwic3JjIjoiaW5ib3VuZF9hdXRoX2FjY2Vzc190b2tlbl9pZDo3NjMxNDQ0MDg0MjcxMzQ5Nzc5In0.UTT8DyTQZ2jJp1KhJQsoyS0Fd511ibDaB6CRloFPbovi_aZmWgIRm4jjAOVF0RH80zKdb0vJ05tKIvXG0hKQQTACZw6FIMk2WupaHwK9s6m8OTTcfXa-kC3UBDbs0cRFFFcX9raaHl6BKXKIX-2Q5zIboUzloTKnCLmv2RVSeLN4RbWGRcEXucHRQZceS220_bHbG2dFMb2M8YoWDsiXl6tW1fJaDLCDHfN1MLpBQvoP_8IPgGLyqDD9LaepNWPyvc7X3q_VcKMNijnSLcfqPSnwFXf_JarcZR33fJInoeJAdSLzozJOf2UXSZckHqRjjM5jBSaqyYqtM2chh-IAKQ",
+    "Content-Type": "application/json",
+}
+payload = json.loads(r'''{
+  "user_input": ""
+}''')
+
+response = requests.post(url, headers=headers, json=payload)
+print(response.status_code)
+print(response.text)

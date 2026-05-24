@@ -7,3 +7,5 @@ target/
 uploads/images/
 .claude/
 food-back/common/src/main/resources/application.yml
+food-back/tiny_best_model/
+food-back/bert_ner_model_next/
