@@ -1,0 +1,9 @@
+node_modules/
+dist/
+target/
+.idea/
+*.iml
+.DS_Store
+uploads/images/
+.claude/
+food-back/common/src/main/resources/application.yml
